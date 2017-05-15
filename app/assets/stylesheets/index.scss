@@ -1,0 +1,24 @@
+
+.index_container {
+  position: relative;
+  margin: auto;
+  width: 65%;
+  min-height: 100vh;
+  background-color: floralwhite;
+  flex-grow: 1;
+}
+
+.index_header {
+  text-align: center;
+  justify-content: center;
+}
+
+.warning_holder {
+  text-align: center;
+}
+
+.instructions_holder {
+  width: 65%;
+  margin: auto;
+  border-style: ridge;
+}
