@@ -7,10 +7,14 @@ const SearchBar = (props) => {
       <form className="searchbar" onSubmit={props.handleFormSubmit}>
         <input
           type='text'
+           placeholder='Search Gif'
           onChange={props.handleFormChange}
           className="searchtext"
           />
-        <input type="submit"  value="Submit"  className="searchsubmit"/>
+
+        <input className="buttonz"
+        input type="submit"  value="Submit"  className="searchsubmit"/>
+
       </form>
     </div>
 

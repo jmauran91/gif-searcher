@@ -38,8 +38,8 @@ class IndexContainer extends React.Component {
   }
 
   render(){
+
     let gif_render = this.state.gif_objects.map((gif, i) => {
-      debugger;
       return(
         <GifTile
         key = {i}
@@ -51,14 +51,18 @@ class IndexContainer extends React.Component {
     return(
       <div>
         <div>
+        <div className='app-components'>
           <SearchBar
             handleFormChange={this.handleFormChange}
             handleFormSubmit={this.handleFormSubmit}
             value={this.state.query}
           />
         </div>
+        <div id='colorStrip' />
+        </div>
         <div>
           <ul>
+          <h2 className="heading">GIF Search</h2>
             {gif_render}
           </ul>
         </div>
